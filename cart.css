@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navigation Styling */
+.nav {
+    width: 100%;
+    background-color: #f8cdd3; /* Soft pink color */
+    color: #4a4a4a; /* Dark gray for text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+     /* Make it fixed at the top */
+    top: 0; /* Align it to the top */
+    left: 1;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    margin-top: 1%;
+}
+
+.nav td {
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav td:hover {
+    background-color: #ffb6c1;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fd8b2e;
+    margin-bottom: 30px;
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-quantity input {
+    width: 60px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 80px;
+    margin-left: 5%;
+}
+
+.cart-item-remove {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.cart-item-remove:hover {
+    background-color: #ff0000;
+}
+
+/* Cart Summary */
+.cart-summary {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #fd8b2e;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #ee8834;
+}
+
+/* Button Container */
+.edit {
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.edit:active {
+    transform: scale(0.95); /* Slightly shrink button when clicked */
+}
+
+/* Hover Effect */
+.edit:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Add specific styles for "+" and "-" buttons */
+.edit:nth-of-type(1) {
+    background-color: #FF6347; /* Red color for "-" */
+}
+
+.edit:nth-of-type(1):hover {
+    background-color: #e55347; /* Darker red on hover */
+}
+
+.edit:nth-of-type(2) {
+    background-color: #04af4b; /* Blue color for "+" */
+}
+
+.edit:nth-of-type(2):hover {
+    background-color: #049c43; /* Darker blue on hover */
+}
+
